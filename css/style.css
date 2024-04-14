@@ -1,0 +1,395 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.containar{
+overflow: hidden;
+margin: 20px auto;
+}
+@media (min-width: 768px) {
+    .containar {
+        width: 750px;
+        overflow: hidden;
+    }
+}
+@media (min-width: 992px) {
+    .containar {
+        width: 992px;
+    }
+}
+@media (min-width: 1200px) {
+    .containar {
+        width: 1170px;
+    }
+}
+
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px black;
+}
+.logo {
+    background-image: linear-gradient(gray , black);
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 10px;
+    font-size:30px;
+    border-radius: 10px;
+    text-shadow: 5px 5px 50px  black;
+}
+.nav ul li{
+    display: inline;
+    font-size: 25px;
+    margin-inline: 25px;
+    color: black;
+    transition: .5s;
+}
+.nav ul li:hover{
+    background-color: rgb(201, 193, 193);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.welcome{
+font-size: 50px;
+text-align: center;
+padding-bottom: 20px;
+
+}
+
+.lorem {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+.order{
+text-align: center;
+padding: 10px;
+margin-bottom: 50px;
+color: white;
+background-color: black;
+border-radius: 12px;
+width: 200px;
+}
+
+.menu-swip {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px auto;
+    padding: 100px;
+}
+
+.menu {
+    width: 200px;
+    background-color: red;
+    transition: .5s;
+    text-align: center;
+    margin: 10px;
+    padding: 10px 0;
+    border-radius: 8px;
+    color: white;
+    background-color: black;
+}
+.menu:hover {
+    background-image: linear-gradient(#aaa , rgb(0, 83, 116));
+}
+.swip i {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    transition: 1s;
+    animation-name: swip;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    padding-bottom: 10px;
+}
+
+@keyframes swip {
+100% {
+top: 20px;
+}
+}
+
+
+.more {
+text-align: center;
+background-color: black;
+color: white;
+width: 150px;
+margin: 20px auto;
+border-radius: 12px;
+padding: 10px;
+font-size: 25px;
+}
+.moree {
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.more:hover {
+    background-image: linear-gradient(#aaa , rgb(0, 83, 116));
+}
+/* .two-section{
+    width: 50%;
+    height: 6000px;
+    display: grid;
+    grid-template-columns: repeat( 1, 1fr);
+    padding: 10px;
+    gap: 50px 50px;
+    margin: 20px auto;
+} */
+.two-section{
+    width: 80%;
+    height: 2400px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px , 1fr));
+    padding: 10px;
+    gap: 100px 50px;
+    margin: 20px auto;
+
+}
+.two-section div{
+background-color:#eee;
+
+}
+.two-section div .background-onee {
+    background-image: url(../images/300816440_1232314800856007_1794641271898283422_n.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 75%;
+}
+.two-section div .background-twoo {
+    background-image: url(../images/301939318_1234370400650447_6569126460805824903_n.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 75%;
+}
+.two-section div .background-threee {
+    background-image: url(../images/302727754_1239645073456313_3429680872083893210_n.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 75%;
+}
+.two-section div .background-fourr {
+    background-image: url(../images/307438536_1248329149254572_82436672095981885087_n.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 75%;
+}
+.two-section div .background-fivee {
+    background-image: url(../images/313411070_425848479719849_5044598617328968472_n.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 75%;
+}
+.two-section div .background-sixx {
+    background-image: url(../images/313417193_425831849721512_164256806349572603_n.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 75%;
+}
+
+.three-section{
+
+    width: 80%;
+    height: 2200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px , 1fr));
+    padding: 10px;
+    gap: 100px 100px;
+    margin: 20px auto;
+}
+.three-section div{
+background-color: #eee;
+}
+
+.three-section div .background-one {
+    background-image: url(../images/343662651_1292202198039521_1164690400374599717_n.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 75%;
+}
+.three-section div .background-two {
+    background-image: url(../images/259698981_1058146254939530_5439578820795592515_n.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 75%;
+}
+.three-section div .background-three {
+    background-image: url(../images/271726766_1087920988628723_5738895406571209243_n.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 75%;
+}
+.three-section div .background-four {
+    background-image: url(../images/339877122_609375434439594_1147956725125914122_n.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 75%;
+}
+.three-section div .background-five {
+    background-image: url(../images/312828786_1275212799899540_5158763059821865621_n.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 75%;
+}
+.three-section div .background-six {
+    background-image: url(../images/bancake.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 75%;
+}
+.sal-one {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+.sal-one button{
+    border: none;
+    border-radius: 8px;
+    background-color: orange;
+    color: white;
+    width: 80px;
+    font-size: 20px;
+    transition: 1s;
+}
+.sal-one button:hover{
+    background-image: linear-gradient(#aaa , rgb(0, 83, 116));
+}
+.review{
+    display: flex;
+    justify-content: space-around;
+}
+.review p{
+    margin-top: 25px;
+    font-size: 25px;
+}
+.review h3 {
+    color: black;
+    margin-top: 24px;
+}
+.stars {
+margin: 30px;
+}
+.stars i {
+    color: orange;
+}
+.four-section {
+    width:350px;
+    height: 350px;
+    background-image: linear-gradient(white , gray);
+    margin: 20px auto;
+    border-radius: 15px;
+}
+.feedback {
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 350px;
+    margin: 20px auto;
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 25px;
+    height: 55px;
+    }
+    .feedbacky {
+        height: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+.four-section form {
+display: grid;
+gap: 10px 10px;
+width: 50%;
+margin: 20px auto;
+}
+.four-section form  input{
+    display: grid;
+    gap: 10px 10px;
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 5px;
+    height: 30px;
+    border: none;
+    transition: .50s;
+    height: 40px;
+    padding: 10px;
+    font-size: 15px;
+    background-color: white;
+    color: black;
+}
+.four-section form  input:focus{
+    outline: none;
+    
+    
+}
+.four-section form  button{
+height: 50px;
+border: none;
+border-radius: 8px;
+font-size: 20px;
+color: white;
+background-color: black;
+transition: 1s;
+}
+.four-section form  button:hover{
+    background-image: linear-gradient(gray , black);
+}
+.five-section {
+    background-image: linear-gradient(black , rgb(15, 0, 54) , rgb(42, 41, 41));
+    background-size: cover;
+    height: 950px;
+
+}
+.five-section div{
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 20px;
+    text-align: center;
+
+}
+h3 {
+    color: white;
+    font-size: 23px;
+  
+}
+.location {
+    color: #AAA ;
+}
+.location div {
+font-size: 23px;
+}
+.opening div {
+    font-size: 23px;
+}
+.social div {
+    font-size: 23px;
+}
+.opening{
+    color:  #AAA ;
+}
+.social{
+    color:  #AAA ;
+}
+.icon i {
+    font-size: 20px;
+    margin-inline: 10px;
+    transition: .5s;
+}
+.icon i:hover {
+    color: white;
+}
